@@ -68,8 +68,8 @@ public abstract class Innlegg {
 	}
 	
 	public boolean erLik(Innlegg innlegg) {
-		throw new UnsupportedOperationException(TODO.method());
-
+		
+		return innlegg.getId() == this.id;
 	}
 	
 	@Override
