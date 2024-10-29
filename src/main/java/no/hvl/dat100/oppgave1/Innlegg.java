@@ -64,7 +64,7 @@ public abstract class Innlegg {
 	}
 	
 	public void doLike () {
-		throw new UnsupportedOperationException(TODO.method());
+		this.likes += 1;
 	}
 	
 	public boolean erLik(Innlegg innlegg) {
