@@ -14,7 +14,7 @@ public abstract class Innlegg {
 	}
 	
 	public Innlegg(int id, String bruker, String dato) {
-		likes = 0;
+		this.likes = 0;
 		this.id = id;
 		this.bruker = bruker;
 		this.dato = dato;
@@ -31,31 +31,36 @@ public abstract class Innlegg {
 	
 	public String getBruker() {
 		
-		throw new UnsupportedOperationException(TODO.method());
+		return bruker;
 
 	}
 
 	public void setBruker(String bruker) {
-		throw new UnsupportedOperationException(TODO.method());
+		this.bruker = bruker;
 	}
 
 	public String getDato() {
-		throw new UnsupportedOperationException(TODO.method());
-		
+		return dato;
 	}
 
 	public void setDato(String dato) {
-		throw new UnsupportedOperationException(TODO.method());
+		this.dato = dato;
 	}
 
 	public int getId() {
-		throw new UnsupportedOperationException(TODO.method());
-
+		return id;
+	}
+	
+	public void setId(int id) {
+		this.id = id;
 	}
 
 	public int getLikes() {
-		throw new UnsupportedOperationException(TODO.method());
-
+		return likes;
+	}
+	
+	public void setLikes(int likes) {
+		this.likes = likes;
 	}
 	
 	public void doLike () {
