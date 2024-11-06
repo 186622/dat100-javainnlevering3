@@ -4,8 +4,10 @@ import no.hvl.dat100.common.TODO;
 import no.hvl.dat100.oppgave1.*;
 
 public class Blogg {
-
-	// TODO: objektvariable 
+	private Innlegg[] innleggTabell;
+	private int nesteLedig;
+	
+	
 
 	public Blogg() {
 		throw new UnsupportedOperationException(TODO.constructor("Blogg"));
