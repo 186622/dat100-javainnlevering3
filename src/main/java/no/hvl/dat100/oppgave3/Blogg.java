@@ -10,11 +10,12 @@ public class Blogg {
 	
 
 	public Blogg() {
-		throw new UnsupportedOperationException(TODO.constructor("Blogg"));
+		this.innleggTabell= new Innlegg[20];
+		this.nesteLedig = 0;
 	}
 
 	public Blogg(int lengde) {
-		throw new UnsupportedOperationException(TODO.constructor("Blogg"));
+		this.innleggTabell = new Innlegg[lengde];
 	}
 
 	public int getAntall() {
