@@ -48,9 +48,16 @@ public class Blogg {
 	}
 	
 	public boolean leggTil(Innlegg innlegg) {
+		if (ledigPlass() && !finnes(innlegg)) {
+			innleggtabell[nesteLedig] = innlegg;
+			nesteLedig++;
+			return true;
+		}
+		return false;
 
-		throw new UnsupportedOperationException(TODO.method());
 	}
+	
+	
 	
 	public String toString() {
 		throw new UnsupportedOperationException(TODO.method());
