@@ -4,26 +4,27 @@ import no.hvl.dat100.common.TODO;
 import no.hvl.dat100.oppgave1.*;
 
 public class Blogg {
-	private Innlegg[] innleggTabell;
+	private Innlegg[] innleggtabell;
 	private int nesteLedig;
 	
 	
 
 	public Blogg() {
-		this.innleggTabell= new Innlegg[20];
+		this.innleggtabell= new Innlegg[20];
 		this.nesteLedig = 0;
 	}
 
 	public Blogg(int lengde) {
-		this.innleggTabell = new Innlegg[lengde];
+		this.innleggtabell = new Innlegg[lengde];
 	}
 
 	public int getAntall() {
-		throw new UnsupportedOperationException(TODO.method());
+		return nesteLedig;
 	}
 	
 	public Innlegg[] getSamling() {
-		throw new UnsupportedOperationException(TODO.method());
+		
+		return innleggtabell;
 
 	}
 	
